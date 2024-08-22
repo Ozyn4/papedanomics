@@ -1,0 +1,4 @@
+.map-container {
+    position: relative; /* Ensure relative positioning to control z-index */
+    z-index: 1; /* Adjust the z-index value to ensure it's below the dropdown */
+  }
