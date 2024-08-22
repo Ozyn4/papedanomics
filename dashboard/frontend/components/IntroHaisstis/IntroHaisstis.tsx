@@ -1,9 +1,8 @@
 'use client'
-import { Button, Container, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from '@mantine/core';
-import { IconArrowRight } from '@tabler/icons-react';
+import { Container, Image, Text, Title } from '@mantine/core';
 import { useRouter } from 'next/navigation';
 import classes from './IntroHaisstis.module.css';
-import image from './image.svg';
+
 
 export function IntroHaisstis() {
   const router = useRouter();

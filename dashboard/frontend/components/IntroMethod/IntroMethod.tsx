@@ -1,23 +1,10 @@
 'use client'
-import { Textarea,Button, Container, Grid, GridCol, Group, Image, Paper, Space, Spoiler, Stack, Text, ThemeIcon, Title } from '@mantine/core';
-import { IconArrowRight } from '@tabler/icons-react';
-import { useRouter } from 'next/navigation';
+import {Container, Image,  Text, Title } from '@mantine/core';
 import classes from './IntroMethod.module.css';
-import { useState } from 'react';
-import Modal from '@/components/Modal/Modal'
 
 // Simple modal component
 export function IntroMethod() {
-  const router = useRouter();
-  const [isModalOpen, setModalOpen] = useState<boolean>(false);
 
-  const handleButtonClick = () => {
-    setModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-  };
 
 
   return (

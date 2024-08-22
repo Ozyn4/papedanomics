@@ -15,7 +15,7 @@ export class RadarChart extends React.Component {
 
   render() {
     return (
-      <Radar ref={this.chartRef} data={RadarData} options={RadarOptions} />
+      <Radar ref={this.chartRef} data={RadarData} />
     );
   }
 }

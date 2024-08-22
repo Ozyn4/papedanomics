@@ -1,23 +1,15 @@
 'use client'
 import {
   Burger,
-  Button,
-  Divider,
-  Drawer,
   Group,
-  List,
-  rem, ScrollArea,
   Text,
-  ThemeIcon, Tooltip
 } from '@mantine/core';
-import { IconLogin, IconLogout, IconQuestionMark } from '@tabler/icons-react';
-import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import classes from './Header.module.css';
 
-export function Header({ user, drawerOpened, toggleDrawer } : { user: any, drawerOpened: any, toggleDrawer : any }) {
+export function Header({ drawerOpened, toggleDrawer } : { drawerOpened: any, toggleDrawer : any }) {
   const router = useRouter();
-  user=''
+  
   // const handleLogout = async () => {
   //   await signOut({ callbackUrl: '/' });
   // }
@@ -44,7 +36,7 @@ export function Header({ user, drawerOpened, toggleDrawer } : { user: any, drawe
             }
           </Group>
         } */}
-        {!user &&
+        
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#home" className={classes.link}>
               Beranda
@@ -62,7 +54,7 @@ export function Header({ user, drawerOpened, toggleDrawer } : { user: any, drawe
               Tentang Kami
             </a>
           </Group>
-        }
+        
         <Group visibleFrom="sm">
         </Group>
         <Burger onClick={toggleDrawer} hiddenFrom="sm" />

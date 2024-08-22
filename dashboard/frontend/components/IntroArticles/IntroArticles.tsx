@@ -1,6 +1,5 @@
 'use client'
 import { Textarea,Button, Container, Grid, GridCol, Group, Image, Paper, Space, Spoiler, Stack, Text, ThemeIcon, Title } from '@mantine/core';
-import { IconArrowRight } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 import classes from './IntroArticles.module.css';
 import { useState } from 'react';

@@ -1,8 +1,6 @@
 'use client'
-import { Container, Grid, GridCol, SimpleGrid, Text, TextInput, Title } from '@mantine/core';
-import { IconSearch } from '@tabler/icons-react';
+import { Container, Grid, GridCol, Title } from '@mantine/core';
 import { useRouter } from 'next/navigation';
-import { ArticleCard } from '../ArticleCard/ArticleCard';
 import classes from './IntroUsers.module.css';
 import { useEffect, useState } from 'react';
 import { Combobox, Input, InputBase, useCombobox } from '@mantine/core';

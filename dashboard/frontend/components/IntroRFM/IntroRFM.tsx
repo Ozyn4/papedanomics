@@ -1,11 +1,9 @@
 'use client'
-import { Button, Container, Grid, GridCol, Group, Image, Paper, Space, Spoiler, Stack, Text, ThemeIcon, Title } from '@mantine/core';
-import { IconArrowRight } from '@tabler/icons-react';
-import { useRouter } from 'next/navigation';
+import {  Container, Grid, GridCol, Image, Paper, Space, Spoiler, Text, Title } from '@mantine/core';
+
 import classes from './IntroRFM.module.css';
 import ScatterPlot from '@/components/ScatterPlot/ScatterPlot';
 export function IntroRFM() {
-  const router = useRouter();
   const scatterData1 = [
     { x: 20, y: 19 },
     { x: 17, y: 20 },
